@@ -2531,7 +2531,7 @@ window.renderShiftsPage=function(){
       '</span>'+
      '</td>'+
      '<td>'+
-      '<button class="btn red" onclick="removeItem(\\'shifts\\','+
+      '<button class="btn red" onclick="removeItem(\'shifts\','+
        s.id+
       ')">Sil</button>'+
      '</td>'+
@@ -2609,7 +2609,7 @@ window.renderStaffPage=function(){
       '</span>'+
      '</td>'+
      '<td>'+
-      '<button class="btn red" onclick="removeItem(\\'staff\\','+
+      '<button class="btn red" onclick="removeItem(\'staff\','+
        p.id+
       ')">Sil</button>'+
      '</td>'+
@@ -2678,7 +2678,7 @@ window.renderInvoicesPage=function(){
       '</span>'+
      '</td>'+
      '<td>'+
-      '<button class="btn red" onclick="removeItem(\\'invoices\\','+
+      '<button class="btn red" onclick="removeItem(\'invoices\','+
        i.id+
       ')">Sil</button>'+
      '</td>'+
@@ -2733,7 +2733,7 @@ window.renderExpensesPage=function(){
       '</b>'+
      '</td>'+
      '<td>'+
-      '<button class="btn red" onclick="removeItem(\\'expenses\\','+
+      '<button class="btn red" onclick="removeItem(\'expenses\','+
        i.id+
       ')">Sil</button>'+
      '</td>'+
