@@ -189,15 +189,15 @@ const server = http.createServer(async (req, res) => {
     }
   }
 
-  if (req.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html")) {
-    return send(res, 200, HTML, "text/html; charset=utf-8");
-  }
+ if (req.method === "GET" && url.pathname === "/favicon.ico") {
+  return send(res, 204, "");
+}
 
-  if (req.method === "GET" && url.pathname === "/favicon.ico") {
-    return send(res, 204, "");
-  }
+if (req.method === "GET") {
+  return send(res, 200, HTML, "text/html; charset=utf-8");
+}
 
-  return sendJSON(res, 404, { error: "Bulunamadı." });
+return sendJSON(res, 404, { error: "Bulunamadı." });
 });
 
 server.listen(PORT, "0.0.0.0", () => {
